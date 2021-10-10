@@ -1,4 +1,4 @@
-var player, carrot, obs1, obs2, obs3, obs4, obs5, obs6, obs7, obs8, obs9, edges;
+var player, carrot, obs1, obs2, obs3, obs4, obs5, obs6, obs7, obs8, obs9, edges, snakeGroup;
 
 
 function preload() {
@@ -23,7 +23,7 @@ function setup() {
   carrot = createSprite(550,40,30,30);    
   
   obs1.velocityX=5;
-  obs2.velocityX=5;
+  obs2.velocityX=-5;
   obs3.velocityX=5;
   obs4.velocityX=-5;
   obs5.velocityX=5;
@@ -31,6 +31,7 @@ function setup() {
   obs7.velocityX=5;
   obs8.velocityX=-5;
   obs9.velocityX=5;
+  
   player.scale=0.5;
 
 }
@@ -89,40 +90,58 @@ function draw() {
     text("YOU WIN",200,200)
   }
   if(player.isTouching(obs1)){
-    obs1.velocityX=0;
-    text("YOU LOSE",200,200);
+    // obs1.velocityX=0;
+    // text("YOU LOSE",200,200);
+    player.x = 40;
+    player.y = 550;
   }
   if(player.isTouching(obs2)){
-    obs1.velocityX=0;
-    text("YOU LOSE",200,200);
+    // obs1.velocityX=0;
+    // text("YOU LOSE",200,200);
+    player.x = 40;
+    player.y = 550;
   }
   if(player.isTouching(obs3)){
-    obs1.velocityX=0;
-    text("YOU LOSE",200,200);
+    // obs1.velocityX=0;
+    // text("YOU LOSE",200,200);
+    player.x = 40;
+    player.y = 550;
   }
   if(player.isTouching(obs4)){
-    obs1.velocityX=0;
-    text("YOU LOSE",200,200);
+    // obs1.velocityX=0;
+    // text("YOU LOSE",200,200);
+    player.x = 40;
+    player.y = 550;
   }
   if(player.isTouching(obs5)){
-    obs1.velocityX=0;
-    text("YOU LOSE",200,200);
+    // obs1.velocityX=0;
+    // text("YOU LOSE",200,200);
+    player.x = 40;
+    player.y = 550;
   }
   if(player.isTouching(obs6)){
-    obs1.velocityX=0;
-    text("YOU LOSE",200,200);
+    // obs1.velocityX=0;
+    // text("YOU LOSE",200,200);
+    player.x = 40;
+    player.y = 550;
   }
   if(player.isTouching(obs7)){
-    obs1.velocityX=0;
-    text("YOU LOSE",200,200);
+    // obs1.velocityX=0;
+    // text("YOU LOSE",200,200);
+    player.x = 40;
+    player.y = 550;
   }
   if(player.isTouching(obs8)){
-    obs1.velocityX=0;
-    text("YOU LOSE",200,200);
+    // obs1.velocityX=0;
+    // text("YOU LOSE",200,200);
+    player.x = 40;
+    player.y = 550;
   }
   if(player.isTouching(obs9)){
-    obs1.velocityX=0;
-    text("YOU LOSE",200,200);
+    // obs1.velocityX=0;
+    // text("YOU LOSE",200,200);
+    player.x = 40;
+    player.y = 550;
   }
 
   drawSprites();
