@@ -22,15 +22,15 @@ function setup() {
   obs9 = createSprite(630,300,100,20);
   carrot = createSprite(550,40,30,30);    
   
-  obs1.velocityX=5;
-  obs2.velocityX=-5;
-  obs3.velocityX=5;
-  obs4.velocityX=-5;
-  obs5.velocityX=5;
-  obs6.velocityX=-5;
-  obs7.velocityX=5;
-  obs8.velocityX=-5;
-  obs9.velocityX=5;
+  // obs1.velocityX=5;
+  // obs2.velocityX=-5;
+  // obs3.velocityX=5;
+  // obs4.velocityX=-5;
+  // obs5.velocityX=5;
+  // obs6.velocityX=-5;
+  // obs7.velocityX=5;
+  // obs8.velocityX=-5;
+  // obs9.velocityX=5;
   
   player.scale=0.5;
 
